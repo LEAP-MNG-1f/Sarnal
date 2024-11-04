@@ -30,6 +30,8 @@ app.post("/users", (request, response)=>{
         name: name,
         age: age
     }
+    console.log(newUser);
+    
 
     users.push(newUser)
     response.send(users)
